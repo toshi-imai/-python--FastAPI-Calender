@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link ref="stylesheet" href="calender.css">
+        <meta charset="UTF-8">
+        <title>Simple toDo Application</title>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-10">
+                <h1>Calendar Sample</h1>
+            </div>
+        </div>
+        <hr>
+        <br />
+        <h3>- カレンダー -</h3>
+        <br />
+
+        <p>↓ 日付をクリックして別ページに遷移します。</p>
+        {% autoescape false %}
+        {{ calender }}
+        {% endautoescape %}
+        <br />
+        <footer>
+            <p>This is a simple toDo application powered by <b>FastAPI</b>!</p>
+        </footer>
+    </body>
+</html>
